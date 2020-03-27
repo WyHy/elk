@@ -6,7 +6,7 @@ services:
     hostname: elasticsearch
     environment:
       - discovery.type=single-node
-      # - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "ES_JAVA_OPTS=-Xms256m -Xmx256m"
     volumes:
       - ./Elasticsearch/data:/usr/share/elasticsearch/data
     restart: always

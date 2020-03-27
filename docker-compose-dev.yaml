@@ -25,12 +25,12 @@ services:
     ports:
       - "5601:5601"
 
-  logstash:
-    image: docker.elastic.co/logstash/logstash:7.5.1
-    hostname: logstash
-    restart: always
-    depends_on:
-      - elasticsearch
-    ports:
-      - 9600:9600
-      - 5044:5044
+  # logstash:
+  #   image: docker.elastic.co/logstash/logstash:7.5.1
+  #   hostname: logstash
+  #   restart: always
+  #   depends_on:
+  #     - elasticsearch
+  #   ports:
+  #     - 9600:9600
+  #     - 5044:5044
